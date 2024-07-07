@@ -1,6 +1,7 @@
 {
     "conventionalCommits.scopes": [
         "gRPC",
-        "kafka"
+        "kafka",
+        "Bank"
     ]
 }
