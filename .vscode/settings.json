@@ -1,5 +1,6 @@
 {
     "conventionalCommits.scopes": [
-        "gRPC"
+        "gRPC",
+        "kafka"
     ]
 }
