@@ -1,4 +1,4 @@
 export class CreateBankAccountDto {
-  accountNumber: string;
-  ownerName: string;
+  account_number: string;
+  owner_name: string;
 }

@@ -11,17 +11,14 @@ export class BankAccount {
   id: string;
 
   @Column()
-  accountNumber: string;
+  account_number: string;
 
   @Column()
-  ownerName: string;
+  owner_name: string;
 
   @Column({ default: 0 })
   balance: number;
 
-  @CreateDateColumn({ name: 'created_at', type: 'timestamp' })
-  createdAt: Date;
-
-  @CreateDateColumn({ name: 'updated_at', type: 'timestamp' })
-  updatedAt: Date;
+  @CreateDateColumn({ type: 'timestamp' })
+  created_at: Date;
 }

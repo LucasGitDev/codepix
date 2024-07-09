@@ -10,6 +10,7 @@ export class BankAccountsService {
     @InjectRepository(BankAccount)
     private bankAccountRepo: Repository<BankAccount>,
   ) {}
+  //DTO - Data Transfer Object
   create(createBankAccountDto: CreateBankAccountDto) {
     return this.bankAccountRepo.save(createBankAccountDto);
   }
@@ -19,6 +20,8 @@ export class BankAccountsService {
   }
 
   findOne(id: string) {
-    return this.bankAccountRepo.findOneOrFail({ where: { id } });
+    return this.bankAccountRepo.findOneOrFail({
+      where: { id },
+    });
   }
 }
